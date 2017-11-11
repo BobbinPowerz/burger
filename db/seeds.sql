@@ -1,5 +1,4 @@
-INSERT INTO burgers (burger_name, devoured)
-VALUES ('Tofu Burger', true),
-VALUES ('Veggie Burger', true),
-VALUES ('Murdered Cow', true),
-VALUES ('Chocked Chicken', true);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Tofu Burger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Veggie Burger", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Murdered Cow", false);
+INSERT INTO burgers (burger_name, devoured) VALUES ("Chocked Chicken", false);

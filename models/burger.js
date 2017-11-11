@@ -6,7 +6,6 @@ var burger = {
     });
   },
 
-   // The variables cols and vals are arrays.
   create: function(cols, burger_name, cb) {
     orm.insertOne("burgers", burger_name, function(res) {
       cb(res);
@@ -18,5 +17,4 @@ var burger = {
     });
   }
 };
-// Export the database functions for the controller (catsController.js).
 module.exports = burger;

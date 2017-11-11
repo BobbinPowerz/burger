@@ -1,0 +1,57 @@
+body{
+	background-color: #F4F8F4;
+	color: #665C6F;
+}
+
+#wrapper{
+	width: 90%;
+	box-sizing: border-box;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: auto;
+}
+
+h1{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+#pic{
+	width: 30%;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#left{
+	width: 30%;
+	float: left;
+	box-sizing: border-box;
+}
+
+#right{
+	width: 30%;
+	box-sizing: border-box;
+	float: right;
+
+}
+
+#add-burger{
+	width: 100%;
+	float: left;
+}
+
+#input{
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button{
+	background-color: #B7E2CD;
+	color: #665C6F;
+	border: 1px solid black;
+	margin: 5px;
+	padding: 2px;
+}
