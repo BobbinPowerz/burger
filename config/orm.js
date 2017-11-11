@@ -1,5 +1,6 @@
 // Import MySQL connection.
 var connection = require("../config/connection.js");
+//helper function for SQL syntax
 function printQuestionMarks(num) {
   var arr = [];
   for (var i = 0; i < num; i++) {
@@ -24,6 +25,8 @@ function objToSql(ob) {
   }
   return arr.toString();
 }
+
+//creating an orm object with 3 methods that will be used in SQL statements
 var orm = {
   selectAll: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
@@ -59,4 +62,5 @@ var orm = {
     });
   },
 };
+//exporting orm for use in models module, burger.js
 module.exports = orm;

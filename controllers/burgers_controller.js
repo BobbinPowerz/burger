@@ -4,7 +4,7 @@ var methodOverride = require('method-override');
 var router = express.Router();
 var burger = require("../models/burger.js");
 
-
+//creating routes for handling incoming get, put, post calls 
 router.get("/", function (req, res) {
   res.redirect("/burgers");
 });
@@ -34,5 +34,5 @@ router.put("/burgers/update/:id", function(req, res) {
       res.redirect("/burgers");
   });
 });
-
+//exporting routes to be used in server.js 
 module.exports = router;

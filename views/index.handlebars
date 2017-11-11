@@ -9,6 +9,7 @@
         {{#unless this.devoured}}
           <li>
             {{this.burger_name}}
+            <!-- using method-override functionality that allows to attach POST method to the form -->
             <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
               <input type="hidden" name="devoured" value="true">
               <button type="submit">Devour</button>
@@ -38,6 +39,7 @@
 <div id="add-burger">
   <div id="input">
     <h2>Add your own burger:</h2>
+    <!-- using method-override functionality that allows to attach POST method to the form -->
     <form class="create-update-form" action="burgers/create" method="POST">
       <div class="form-group">
         <label for="ca">Burger Name:</label>
