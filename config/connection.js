@@ -10,7 +10,7 @@ var connection;
           port: 3306,
           host: "localhost",
           user: "root",
-          password: "",
+          password: "a59508972",
           database: "burgers_db"
         });
   };
